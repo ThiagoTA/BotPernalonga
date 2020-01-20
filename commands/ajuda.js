@@ -27,7 +27,7 @@ exports.run = (client,message,args) => {
           },
           {
             "name": "\n📶 **Servidor:**",
-            "value": "__-ping__, \n__-sugestão ``<titulo> / <mensagem>``__"
+            "value": "__-ping__, \n__-sugestão ``<titulo> / <mensagem>``__ (precisa da / no meio)"
           },
           {
             "name": "\n⏰ **Horário das Lives:**",

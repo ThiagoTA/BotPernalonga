@@ -218,6 +218,13 @@ exports.run = async (client, message, args) => {
               .setImage(`https://i.kym-cdn.com/photos/images/original/001/253/164/a36.gif`);
         message.guild.channels.get(`659603136574521364`).send(abraço30embed)
         break;
+        case 31:
+          let abraço31embed = new Discord.RichEmbed()
+                .setColor("F7DC6F")
+                .setDescription(`💚 **${member.user.username}** você levou um abraço do(a) **${message.author.username}**`)
+                .setImage(`https://66.media.tumblr.com/a881c72015b718fd80ba5126e3ff9712/tumblr_pr91iwLpJd1uelgxao2_540.gif`);
+          message.guild.channels.get(`659603136574521364`).send(abraço31embed)
+          break;
       
       }
      

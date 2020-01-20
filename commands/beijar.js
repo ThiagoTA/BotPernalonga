@@ -5,7 +5,7 @@ exports.run = async (client, message, args) => {
     if(!member)
       return message.guild.channels.get(`659603136574521364`).send("❌ **|** Por favor, mencione **alguém** para beijar! ``-beijar @<usuário>``")
         
-      number = 30;
+      number = 32;
       let random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
       switch (random) {
         case 1: 
@@ -217,6 +217,20 @@ exports.run = async (client, message, args) => {
               .setDescription(`💞 **${member.user.username}** você levou um beijo do(a) **${message.author.username}**`)
               .setImage(`https://thumbs.gfycat.com/LongPlasticAcornbarnacle-size_restricted.gif`);
         message.guild.channels.get(`659603136574521364`).send(kiss30embed)
+        break;
+        case 31:
+        let kiss31embed = new Discord.RichEmbed()
+              .setColor("RED")
+              .setDescription(`💞 **${member.user.username}** você levou um beijo do(a) **${message.author.username}**`)
+              .setImage(`https://i.pinimg.com/originals/ce/78/9b/ce789b4147903a4d3fbec9f2c2103df1.gif`);
+        message.guild.channels.get(`659603136574521364`).send(kiss31embed)
+        break;
+        case 32:
+        let kiss32embed = new Discord.RichEmbed()
+              .setColor("RED")
+              .setDescription(`💞 **${member.user.username}** você levou um beijo do(a) **${message.author.username}**`)
+              .setImage(`https://66.media.tumblr.com/8525ed6243db788e052a636595edd3b9/tumblr_n019sd22Gm1trnchuo1_500.gif`);
+        message.guild.channels.get(`659603136574521364`).send(kiss32embed)
         break;
       
       }
