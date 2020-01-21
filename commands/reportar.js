@@ -9,7 +9,7 @@ module.exports.run = (client, message, args) => {
     }
     
     
-    let splitarg = args.join(" ").split(" ")
+    let splitarg = args.join(" ").split(" - ")
     let member = splitarg[0]
     let motivo = splitarg[1]
 
@@ -28,6 +28,7 @@ module.exports.run = (client, message, args) => {
     let reportarembed = new Discord.RichEmbed()
         .setColor("BLACK")
         .setTitle(`REPORT`)
+        .setThumbnail(`${message.author.avatarURL}`)
         .addField("Membro Reportado:",`__${member}__`)
         .addField("Motivo do Reporte:",`**${motivo}**`)
         .setFooter(`reporte feito por ${message.author.username}`)
