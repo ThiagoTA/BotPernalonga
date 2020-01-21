@@ -28,10 +28,9 @@ module.exports.run = (client, message, args) => {
     let reportarembed = new Discord.RichEmbed()
         .setColor("BLACK")
         .setTitle(`REPORT`)
-        .setThumbnail(`${message.author.avatarURL}`)
         .addField("Membro Reportado:",`__${member}__`)
         .addField("Motivo do Reporte:",`**${motivo}**`)
-        .setFooter(`Sugestão feita por ${message.author.username}`)
+        .setFooter(`reporte feito por ${message.author.username}`)
         .setTimestamp();
     message.guild.channels.get(`669175263288098848`).send(reportarembed)      
 
