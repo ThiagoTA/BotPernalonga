@@ -7,26 +7,33 @@ module.exports.run = (client, message, args) => {
         let numberMessages = parseInt(msgDel);
         message.channel.fetchMessages({limit: numberMessages}).then(messages => message.channel.bulkDelete(messages));
     }
-
-    let member = message.mentions.members.first()
-        if(!member)
-            return message.channel.send(`❌ **|** Por favor, mencione **alguém** para reportar! ``-reportar @<usuário> - (motivo)```)
-
-    let splitarg = args.join(" ").split(" - ")
+    
+    
+    let splitarg = args.join(" ").split(" ")
     let member = splitarg[0]
     let motivo = splitarg[1]
+
+        if(!member){
+            message.channel.send("❌ **|** Por favor, mencione **alguém** para reportar! ``-reportar @<usuário> (motivo)``")
+            return
+            
+        }
         
-        if(!motivo)
-            return message.channel.send(`❌ **|** Por favor, cite o motivo para reporta-lo! ``-reportar @<usuário> - (motivo)```)
+        if(!motivo){
+            message.channel.send("❌ **|** Por favor, cite o **motivo** para reporta-lo! ``-reportar @<usuário> (motivo)``")
+            return
+        }
     
+    message.channel.send(`✅ **|** Seu reporte foi enviado com **sucesso**, staff irá analisar seu caso.`)   
     let reportarembed = new Discord.RichEmbed()
-        .setColor(`BLACK`)
-        .setTitle(`${message.author.tag}`)
-        .addField(`${member.user.tag}`,`${motivo}`)
-        .addField(`${member.user}`)
+        .setColor("BLACK")
+        .setTitle(`REPORT`)
+        .setThumbnail(`${message.author.avatarURL}`)
+        .addField("Membro Reportado:",`__${member}__`)
+        .addField("Motivo do Reporte:",`**${motivo}**`)
+        .setFooter(`Sugestão feita por ${message.author.username}`)
         .setTimestamp();
-    message.guild.channels.get(`669175263288098848`).send(reportarembed)
-    message.guild.channels.get(`659602589989732353`).send(`✅ **|** Seu reporte foi enviado com **sucesso**!`)         
+    message.guild.channels.get(`669175263288098848`).send(reportarembed)      
 
 }
 exports.help = {
