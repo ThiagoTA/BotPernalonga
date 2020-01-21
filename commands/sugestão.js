@@ -10,12 +10,12 @@ module.exports.run = (client, message, args) => {
     let sugestão = splitarg[1]
 
     if(!titulo){
-        message.channel.send("😫 **|** Para utilizar a sugestão basta ``-sugestão <titulo> (sugestão)``")
+        message.channel.send("😫 **|** Para utilizar a sugestão basta ``-sugestão <titulo> - (sugestão)``")
          return
     }
 
     if(!sugestão){
-        message.channel.send("😫 **|** Para utilizar a sugestão basta ``-sugestão <titulo> (sugestão)``")
+        message.channel.send("😫 **|** Para utilizar a sugestão basta ``-sugestão <titulo> - (sugestão)``")
          return
     }
     
