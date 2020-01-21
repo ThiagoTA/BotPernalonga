@@ -1,14 +1,19 @@
 const Discord = require("discord.js")
 
 module.exports.run = (client, message, args) => {
-    
-    let splitarg = args.join(" ").split("  ")
-    let member = splitarg[0]
-    let motivo = splitarg[1]
 
+    if(message.content.startsWith("-reportar")){
+        msgDel = 1;
+        let numberMessages = parseInt(msgDel);
+        message.channel.fetchMessages({limit: numberMessages}).then(messages => message.channel.bulkDelete(messages));
+    }
+    
     let member = message.mentions.members.firts()
         if(!member)
             return message.channel.send(`❌ **|** Por favor, mencione **alguém** para reportar! ``-reportar @<usuário> (motivo)```)
+
+    let splitarg = args.join(" ").split("  ")
+    let motivo = splitarg[1]
         
         if(!motivo)
             return message.channel.send(`❌ **|** Por favor, cite o motivo para reporta-lo! ``-reportar @<usuário> (motivo)```)
