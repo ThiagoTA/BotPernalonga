@@ -53,7 +53,7 @@ exports.run = (client,message,args) => {
           },
           {
             "name": "✅ **Sábado**",
-            "value": "**16Hrs até 22Hrs**",
+            "value": "**15Hrs até 22Hrs**",
             "inline": true
           },
           {
