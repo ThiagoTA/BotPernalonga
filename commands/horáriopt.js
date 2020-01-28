@@ -28,32 +28,32 @@ exports.run = (client,message,args) => {
           },
           {
             "name": "✅ **Segunda**",
-            "value": "**23Hrs até 03Hrs**",
+            "value": "**21Hrs até 01Hrs**",
             "inline": true
           },
           {
             "name": "✅ **Terça**",
-            "value": "**23Hrs até 03Hrs**",
+            "value": "**21Hrs até 01Hrs**",
             "inline": true
           },
           {
             "name": "✅ **Quarta**",
-            "value": "**23Hrs até 03Hrs**",
+            "value": "**21Hrs até 01Hrs**",
             "inline": true
           },
           {
             "name": "✅ **Quinta**",
-            "value": "**23Hrs até 03Hrs**",
+            "value": "**21Hrs até 01Hrs**",
             "inline": true
           },
           {
             "name": "✅ **Sexta**",
-            "value": "**23Hrs até 03Hrs**",
+            "value": "**21Hrs até 01Hrs**",
             "inline": true
           },
           {
             "name": "✅ **Sábado**",
-            "value": "**22Hrs até 03Hrs**",
+            "value": "**19Hrs até 01Hrs**",
             "inline": true
           },
           {
