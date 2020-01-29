@@ -5,8 +5,11 @@ module.exports.run = (client, message, args) => {
     if(!message.member.hasPermission("ADD_REACTIONS")) return message.reply("❌ **|** Você não tem **Permissão** suficiente !")
         message.delete().catch() 
     
+    let splitarg = args.join(" ").split(" - ")
+    let sugestão = splitarg[0]
+
     if(!sugestão){
-        message.channel.send("😫 **|** Para utilizar a sugestão basta ``-sugestão <titulo> - (sugestão)``")
+        message.channel.send("😫 **|** Para utilizar a sugestão basta ``-sugestão (sugestão)``")
          return
     }
     
@@ -22,4 +25,7 @@ module.exports.run = (client, message, args) => {
     message.guild.channels.get(`659602483399753748`).send(sugestãoembed)
 
 
+}
+exports.help = {
+    name:"sugestão"
 }
