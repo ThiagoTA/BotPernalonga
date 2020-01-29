@@ -18,7 +18,7 @@ module.exports.run = (client, message, args) => {
         .setColor("BLUE")
         .setTitle(`${message.author.username}`)
         .setThumbnail(`${message.author.avatarURL}`)
-        .addField(`__${titulo}__`, `**${sugestão}**`)
+        .addField(`**${sugestão}**`)
         .setFooter(`Sugestão feita por ${message.author.username}`)
         .setTimestamp();
 
