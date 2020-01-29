@@ -5,20 +5,12 @@ module.exports.run = (client, message, args) => {
     if(!message.member.hasPermission("ADD_REACTIONS")) return message.reply("❌ **|** Você não tem **Permissão** suficiente !")
         message.delete().catch() 
     
-    let splitarg = args.join(" ").split(" - ")
-    let titulo = splitarg[0]
-    let sugestão = splitarg[1]
-
-    if(!titulo){
-        message.channel.send("😫 **|** Para utilizar a sugestão basta ``-sugestão <titulo> - (sugestão)``")
-         return
-    }
-
     if(!sugestão){
         message.channel.send("😫 **|** Para utilizar a sugestão basta ``-sugestão <titulo> - (sugestão)``")
          return
     }
     
+    message.channel.send(`✅ **|** Sua sugestão foi enviado com **sucesso**.`) 
     let sugestãoembed = new Discord.RichEmbed()
         .setColor("BLUE")
         .setTitle(`${message.author.username}`)
