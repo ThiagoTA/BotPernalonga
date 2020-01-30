@@ -3,7 +3,7 @@ const Discord = require(`discord.js`)
 exports.run = async (client, message, args) => { 
   let member = message.mentions.members.first()
     if(!member)
-      return message.guild.channels.get(`659603136574521364`).send("❌ **|** Por favor, mencione **alguém** para beijar! ``-beijar @<usuário>``")
+      return message.guild.channels.get(`659603136574521364`).send("❌ **|** Por favor, mencione **alguém** para matar! ``-matar @<usuário>``")
         
       number = 32;
       let random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
