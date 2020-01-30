@@ -39,7 +39,7 @@ exports.run = (client,message,args) => {
           },
           {
             "name": "\n⭐ **Diversão:**",
-            "value": "__-beijar `<usuário>`__, \n__-comer `<usuário>`__, \n__-abraçar `<usuário>`__"
+            "value": "__-beijar__ `<usuário>`, \n__-comer__ `<usuário>`, \n__-abraçar__ `<usuário>`, \n__-matar__ `<usuário>`"
           },
         ]
       }; 
