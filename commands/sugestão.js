@@ -21,9 +21,11 @@ module.exports.run = (client, message, args) => {
         .setDescription(`**${sugestão}**`)
         .setFooter(`Sugestão feita por ${message.author.username}`)
         .setTimestamp();
-
+    
     message.guild.channels.get(`659602483399753748`).send(sugestãoembed)
-
+    if(message.guild.channel(`659602483399753748`)){
+        if(message.author.bot) return message.reaction(':heart_eyes:')
+    }
 
 }
 exports.help = {
