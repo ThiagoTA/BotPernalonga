@@ -5,6 +5,14 @@ exports.run = async (client, message, args) => {
     if(!member)
       return message.guild.channels.get(`659603136574521364`).send("❌ **|** Por favor, mencione **alguém** para beijar! ``-beijar @<usuário>``")
         
+      if(message.author.id === member.id){
+        let retornokiss = new Discord.RichEmbed()
+          .setColor("BLACK")
+          .setDescription("😭 Fica assim não, um dia você acha")
+          .setImage(`https://miro.medium.com/max/1000/1*ptosHRnMX4ZbpwylA_GDYQ.gif`)
+        message.guild.channels.get(`659603136574521364`).send(retornokiss)
+      }else {
+      
       number = 32;
       let random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
       switch (random) {
@@ -234,6 +242,7 @@ exports.run = async (client, message, args) => {
         break;
       
       }
+    }
      
 }
 

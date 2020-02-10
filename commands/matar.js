@@ -4,7 +4,15 @@ exports.run = async (client, message, args) => {
   let member = message.mentions.members.first()
     if(!member)
       return message.guild.channels.get(`659603136574521364`).send("❌ **|** Por favor, mencione **alguém** para matar! ``-matar @<usuário>``")
-        
+    
+    if(message.author.id === member.id){
+        let retornokiss = new Discord.RichEmbed()
+          .setColor("BLACK")
+          .setDescription("😱 Não pode suicídio aqui **;-;**")
+          .setImage(`https://i.pinimg.com/originals/6b/ce/12/6bce1281f126ff381d412421a6457473.gif`)
+        message.guild.channels.get(`659603136574521364`).send(retornokiss)
+      }else {  
+
       number = 32;
       let random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
       switch (random) {
@@ -234,6 +242,7 @@ exports.run = async (client, message, args) => {
         break;
       
       }
+    }  
      
 }
 

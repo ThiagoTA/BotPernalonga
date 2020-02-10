@@ -4,7 +4,15 @@ exports.run = async (client, message, args) => {
   let member = message.mentions.members.first()
     if(!member)
       return message.guild.channels.get(`659603136574521364`).send("❌ **|** Por favor, mencione **alguém** para abraçar! ``-abraçar @<usuário>``")
-        
+      
+    if(message.author.id === member.id){
+        let retornokiss = new Discord.RichEmbed()
+          .setColor("BLACK")
+          .setDescription("😭 Quer um abraço por ser solitário?")
+          .setImage(`https://thumbs.gfycat.com/ScaryLargeHuia-size_restricted.gif`)
+        message.guild.channels.get(`659603136574521364`).send(retornokiss)
+      }else {  
+
       number = 30;
       let random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
       switch (random) {
@@ -226,7 +234,8 @@ exports.run = async (client, message, args) => {
           message.guild.channels.get(`659603136574521364`).send(abraço31embed)
           break;
       
-      }
+      }  
+    }
      
 }
 

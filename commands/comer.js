@@ -5,6 +5,14 @@ exports.run = async (client, message, args) => {
     if(!member)
       return message.guild.channels.get(`659603136574521364`).send("❌ **|** Por favor, mencione **alguém** para comer! ``-comer @<usuário>``")
  
+    if(message.author.id === member.id){
+        let retornokiss = new Discord.RichEmbed()
+          .setColor("BLACK")
+          .setDescription("😱 Tem como se comer? **( ͡° ͜ʖ ͡°)**")
+          .setImage(`https://media.tenor.com/images/68048762da94c1158f05f3326f6c9297/tenor.gif`)
+        message.guild.channels.get(`659603136574521364`).send(retornokiss)
+      }else {
+
       number = 16;
       let random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
       switch (random) {
@@ -121,6 +129,7 @@ exports.run = async (client, message, args) => {
         message.guild.channels.get(`659603136574521364`).send(comer16embed)
         break;
       }
+    } 
      
 }
 

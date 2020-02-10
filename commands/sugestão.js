@@ -24,9 +24,11 @@ module.exports.run = (client, message, args) => {
         
         
     message.guild.channels.get(`659602483399753748`).send(sugestãoembed)
-    
-    
-   
+     
+    message.guild.channels.get(`659602483399753748`).send(sugestãoembed)
+    if(message.guild.channels.get(`659602483399753748`)){
+        if(message.author.bot) return message.reaction(':heart_eyes:')
+    }
 
 
 }
