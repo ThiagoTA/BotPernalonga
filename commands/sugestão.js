@@ -3,8 +3,8 @@ const Discord = require(`discord.js`)
 module.exports.run = (client, message, args) => {
     client.on('message', async message =>{
         if(message.channel.id == '659602483399753748'){ 
-            message.react('👍');
             message.react('👎');
+            message.react('👍');
     }   
 })
 
