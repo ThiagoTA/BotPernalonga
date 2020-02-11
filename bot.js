@@ -27,6 +27,7 @@ command = command.slice(config.prefix.length);
 } catch (err) {
       console.error("Erro:" + err)
 }
+
 })
 
 client.on("ready", () => {
@@ -50,4 +51,4 @@ client.on("ready", () => {
 })
 
 
-client.login(config.token)
+client.login(config.token) 
