@@ -20,7 +20,7 @@ module.exports.run = (client, message, args) => {
     
        message.channel.send(`✅ **|** Sua sugestão de jogo foi enviado com **sucesso**.`)
         
-        let sugestãoembed = new Discord.RichEmbed()
+        let jogoembed = new Discord.RichEmbed()
             .setColor("ORANGE")
             .setTitle(`${message.author.username}`)
             .setThumbnail(`${message.author.avatarURL}`)
@@ -29,7 +29,7 @@ module.exports.run = (client, message, args) => {
             .setTimestamp();
         
         
-        message.guild.channels.get(`677524768148291604`).send(sugestãoembed)
+        message.guild.channels.get(`677524768148291604`).send(jogoembed)
 
 
 
