@@ -2,39 +2,39 @@ const Discord = require(`discord.js`)
 
 module.exports.run = (client, message, args) => {
     client.on('message', async message =>{
-        if(message.channel.id == '659602483399753748'){ 
+        if(message.channel.id == '677524768148291604'){ 
             message.react('👎');
             message.react('👍');
     }   
 })
-
+    
     if(!message.member.hasPermission("ADD_REACTIONS")) return message.reply("❌ **|** Você não tem **Permissão** suficiente !")
-        message.delete().catch() 
+    message.delete().catch() 
        
         let splitarg = args.join(" ").split(" - ")
-        let sugestão = splitarg[0]
+        let jogosugestão = splitarg[0]
 
-            if(!sugestão){
-                return  message.channel.send("😫 **|** Para utilizar a sugestão basta ``-sugestão (sugestão)``")
+            if(!jogosugestão){
+                return  message.channel.send("😫 **|** Para utilizar o jogo sugestão basta ``-jogosugestão (jogo)``")
             }
     
-        message.channel.send(`✅ **|** Sua sugestão foi enviad0 com **sucesso**.`) 
-
+       message.channel.send(`✅ **|** Sua sugestão de jogo foi enviado com **sucesso**.`)
+        
         let sugestãoembed = new Discord.RichEmbed()
-            .setColor("BLUE")
+            .setColor("ORANGE")
             .setTitle(`${message.author.username}`)
             .setThumbnail(`${message.author.avatarURL}`)
-            .setDescription(`**${sugestão}**`)
+            .setDescription(`**${jogosugestão}**`)
             .setFooter(`Sugestão feita por ${message.author.username}`)
             .setTimestamp();
         
         
-        message.guild.channels.get(`659602483399753748`).send(sugestãoembed)
+        message.guild.channels.get(`677524768148291604`).send(sugestãoembed)
 
 
 
 }
 exports.help = {
-    name:"sugestão"
+    name:"jogosugestão"
 }
 

@@ -15,11 +15,6 @@ exports.run = (client,message,args) => {
         "thumbnail": {
           "url": "http://3.bp.blogspot.com/-Eohhdl-gUJ0/VPHQuiXynDI/AAAAAAAAMb0/2lcXs5AFFDs/s1600/Bugs%2BBunny%2B12%2Bcora%C3%A7%C3%A3o%2Bsaltando.gif"
         },
-        "author": {
-          "name": "Capinha",
-          "url": "https://www.twitch.tv/lorran_aa",
-          "icon_url": "https://www.walldesk.com.br/fotos/11879_natal-do-pernalonga-e-do-taz-no-gelo.jpg"
-        },
         "fields": [
           {
             "name": "\n💬 **Sobre:**",
@@ -27,7 +22,7 @@ exports.run = (client,message,args) => {
           },
           {
             "name": "\n📶 **Servidor:**",
-            "value": "__-ping__, \n__-sugestão__ ``(sugestão)``, \n__-reportar__ ``@<usuário> - (motivo)``"
+            "value": "__-ping__, \n__-sugestão__ ``(sugestão)``, \n__-jogosugestão__ ``(jogo)``, \n__-reportar__ ``@<usuário> - (motivo)``"
           },
           {
             "name": "\n⏰ **Horário das Lives:**",
