@@ -7,21 +7,22 @@ if(message.channel.id !== '659603136574521364'){
   message.channel.send('❌ **|** Não foi possível mandar esse comando dentro desse canal')
 
 } else {
-      let member = message.mentions.members.first()
+      
+    let member = message.mentions.members.first()
     
-  if(!member)
-      return message.channel.send("❌ **|** Por favor, mencione **alguém** para beijar! ``-beijar @<usuário>``")
+    if(!member)
+        return message.channel.send("❌ **|** Por favor, mencione **alguém** para beijar! ``-beijar @<usuário>``")
         
-      if(message.author.id === member.id){
+          if(message.author.id === member.id){
         
-        let retornokiss = new Discord.RichEmbed()
-          .setColor("BLACK")
-          .setDescription("😭 Fica assim não, um dia você acha")
-          .setImage(`https://miro.medium.com/max/1000/1*ptosHRnMX4ZbpwylA_GDYQ.gif`)
+              let retornokiss = new Discord.RichEmbed()
+                .setColor("BLACK")
+                .setDescription("😭 Fica assim não, um dia você acha")
+                .setImage(`https://miro.medium.com/max/1000/1*ptosHRnMX4ZbpwylA_GDYQ.gif`)
         
           message.channel.send(retornokiss)
       
-      }else {
+        }else {
       
       number = 32;
       let random = Math.floor (Math.random() * (number - 1 + 1)) + 1;

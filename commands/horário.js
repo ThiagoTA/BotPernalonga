@@ -22,13 +22,13 @@ exports.run = (client,message,args) => {
         },
         "fields": [
           {
-            "name": "\n❌ **Domingo**",
-            "value": "**~~Sem Live~~**",
+            "name": "\n✅ **Domingo**",
+            "value": "**13Hrs até 19Hrs**",
             "inline": true
           },
           {
-            "name": "✅  **Segunda**",
-            "value": "**18Hrs até 22Hrs**",
+            "name": "❌ **Segunda**",
+            "value": "**~~Sem Live~~**",
             "inline": true
           },
           {
