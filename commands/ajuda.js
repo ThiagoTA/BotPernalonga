@@ -8,36 +8,45 @@ exports.run = (client,message,args) => {
     message.channel.fetchMessages({limit: numberMessages}).then(messages => message.channel.bulkDelete(messages));
   }
 
-    embed = {
-        "title": "📃 **Comandos** 📃",
-        "description": `Olá ${message.author}, todos os comandos possiveis estão aqui.`,
-        "color": 9442302,
-        "thumbnail": {
-          "url": "http://3.bp.blogspot.com/-Eohhdl-gUJ0/VPHQuiXynDI/AAAAAAAAMb0/2lcXs5AFFDs/s1600/Bugs%2BBunny%2B12%2Bcora%C3%A7%C3%A3o%2Bsaltando.gif"
-        },
-        "fields": [
-          {
-            "name": "\n💬 **Sobre:**",
-            "value": "__-sobre__"
-          },
-          {
-            "name": "\n📶 **Servidor:**",
-            "value": "__-ping__, \n__-sugestão__ ``(sugestão)``, \n__-jogosugestão__ ``(jogo)``, \n__-reportar__ ``@<usuário> - (motivo)``"
-          },
-          {
-            "name": "\n⏰ **Horário das Lives:**",
-            "value": "🇧🇷 __-horário__, \n🇵🇹 __-horáriopt__"
-          },
-          {
-            "name": "\n🔧 **Moderação:**",
-            "value": "__-limpar__, \n__-kick__, \n__-ban__, \n__-anunciar__ "
-          },
-          {
-            "name": "\n⭐ **Diversão:**",
-            "value": "__-beijar__ `<usuário>`, \n__-comer__ `<usuário>`, \n__-abraçar__ `<usuário>`, \n__-matar__ `<usuário>`"
-          },
-        ]
-      }; 
+  embed = {
+    "title": "📖 COMANDOS HELP 📖",
+    "description": "```➤ Olá velhinho, como vai? Aqui estão todos os comandos possíveis dentro do servidor.```",
+    "color": 9442302,
+    "footer": {
+      "icon_url": `${message.author.displayAvatarURL}`,
+      "text": `${message.author.username}`
+    },
+    "thumbnail": {
+      "url": "https://media3.giphy.com/media/3oFzmerJ9kykSR92jm/giphy.gif"
+    },
+    "fields": [
+      {
+        "name": "│:signal_strength: Servidor:",
+        "value": "```→ -ping\n→ -sugestão\n→ -reportar\n→ -bug❌```",
+        "inline": true
+      },
+      {
+        "name": "│:wrench: Moderação:",
+        "value": "```→ -limpar\n→ -kick\n→ -ban\n→ -anunciar```",
+        "inline": true
+      },
+      {
+        "name": "│:star: Diversão:",
+        "value": "```→ -beijar\n→ -abraçar\n→ -matar\n→ -comer```",
+        "inline": true
+      },
+      {
+        "name": "│🎬 Stream:",
+        "value": "```→ -horário\n→ -horáriopt\n→ -livegame\n→ -parceiros❌```",
+        "inline": true
+      },
+      {
+        "name": "│:speech_balloon: Sobre:",
+        "value": "```➤ Esse bot está sendo desenvolvido pelo #!Thiago#9137\n→ -sobre```",
+        "inline": false
+      }
+    ]
+  };
       message.channel.send({ embed });
 }
 

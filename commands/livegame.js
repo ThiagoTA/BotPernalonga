@@ -12,10 +12,10 @@ module.exports.run = (client, message, args) => {
     message.delete().catch() 
        
         let splitarg = args.join(" ").split(" - ")
-        let jogosugestão = splitarg[0]
+        let livegame = splitarg[0]
 
-            if(!jogosugestão){
-                return  message.channel.send("😫 **|** Para utilizar o jogo sugestão basta ``-jogosugestão (jogo)``")
+            if(!livegame){
+                return  message.channel.send("😫 **|** Para utilizar o jogo sugestão basta ``-livegame (jogo)``")
             }
     
        message.channel.send(`✅ **|** Sua sugestão de jogo foi enviado com **sucesso**.`)
@@ -24,7 +24,7 @@ module.exports.run = (client, message, args) => {
             .setColor("ORANGE")
             .setTitle(`${message.author.username}`)
             .setThumbnail(`${message.author.avatarURL}`)
-            .setDescription(`**${jogosugestão}**`)
+            .setDescription(`**${livegame}**`)
             .setFooter(`Sugestão feita por ${message.author.username}`)
             .setTimestamp();
         
@@ -35,6 +35,6 @@ module.exports.run = (client, message, args) => {
 
 }
 exports.help = {
-    name:"jogosugestão"
+    name:"livegame"
 }
 

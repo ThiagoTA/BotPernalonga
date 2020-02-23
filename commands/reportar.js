@@ -14,14 +14,14 @@ module.exports.run = (client, message, args) => {
     let motivo = splitarg[1]
 
         if(!member){
-            message.channel.send("❌ **|** Por favor, mencione **alguém** para reportar! ``-reportar @<usuário> - (motivo)``")
-            return
+            return message.channel.send("❌ **|** Por favor, mencione **alguém** para reportar! ``-reportar @<usuário> - (motivo)``")
+           
             
         }
         
         if(!motivo){
-            message.channel.send("❌ **|** Por favor, cite o **motivo** para reporta-lo! ``-reportar @<usuário> - (motivo)``")
-            return
+            return message.channel.send("❌ **|** Por favor, cite o **motivo** para reporta-lo! ``-reportar @<usuário> - (motivo)``")
+            
         }
     
     message.channel.send(`✅ **|** Seu reporte foi enviado com **sucesso**, staff irá analisar seu caso.`)   

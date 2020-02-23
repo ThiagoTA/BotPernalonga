@@ -15,11 +15,6 @@ exports.run = (client,message,args) => {
         "thumbnail": {
           "url": "https://media1.tenor.com/images/7b02799e8956ad375c39ba2710795003/tenor.gif?itemid=10654881"
         },
-        "author": {
-          "name": "Pernalonga",
-          "url": "https://www.twitch.tv/lorran_aa",
-          "icon_url": "https://www.walldesk.com.br/fotos/11879_natal-do-pernalonga-e-do-taz-no-gelo.jpg"
-        },
         "fields": [
           {
             "name": "\n✅ **Domingo**",
