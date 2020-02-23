@@ -18,7 +18,7 @@ exports.run = (client,message,args) => {
         "fields": [
           {
             "name": "\n❌ **Domingo**",
-            "value": "**13Hrs até 19Hrs**",
+            "value": "**Recesso**",
             "inline": true
           },
           {
