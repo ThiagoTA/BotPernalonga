@@ -17,38 +17,38 @@ exports.run = (client,message,args) => {
         },
         "fields": [
           {
-            "name": "\n✅ **Domingo**",
-            "value": "**16Hrs até 22Hrs**",
+            "name": "\n❌ **Domingo**",
+            "value": "**Recesso**",
             "inline": true
           },
           {
             "name": "❌ **Segunda**",
-            "value": "**~~Sem Live~~**",
+            "value": "**Recesso**",
             "inline": true
           },
           {
-            "name": "✅ **Terça**",
-            "value": "**21Hrs até 01Hrs**",
+            "name": "❌ **Terça**",
+            "value": "**Recesso**",
             "inline": true
           },
           {
-            "name": "✅ **Quarta**",
-            "value": "**21Hrs até 01Hrs**",
+            "name": "❌ **Quarta**",
+            "value": "**Recesso**",
             "inline": true
           },
           {
-            "name": "✅ **Quinta**",
-            "value": "**21Hrs até 01Hrs**",
+            "name": "❌ **Quinta**",
+            "value": "**Recesso**",
             "inline": true
           },
           {
-            "name": "✅ **Sexta**",
-            "value": "**21Hrs até 01Hrs**",
+            "name": "❌ **Sexta**",
+            "value": "**Recesso**",
             "inline": true
           },
           {
-            "name": "✅ **Sábado**",
-            "value": "**19Hrs até 01Hrs**",
+            "name": "❌ **Sábado**",
+            "value": "**Recesso**",
             "inline": true
           },
           {
