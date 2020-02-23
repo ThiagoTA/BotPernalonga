@@ -21,7 +21,7 @@ module.exports.run = (client, message, args) => {
         message.channel.send(`✅ **|** Sua sugestão foi enviad0 com **sucesso**.`) 
 
         let sugestãoembed = new Discord.RichEmbed()
-            .setColor("BLUE")
+            .setColor("#bd26f7")
             .setTitle(`${message.author.username}`)
             .setThumbnail(`${message.author.avatarURL}`)
             .setDescription(`**${sugestão}**`)

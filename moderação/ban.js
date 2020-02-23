@@ -10,15 +10,18 @@ module.exports.run = async (client, message, args) => {
 
     if(!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("❌ **|** Você não tem **Permissão** suficiente !")
     message.delete().catch()
+    
     let member = message.mentions.members.first()
-    if(!member)
-      return message.reply("❌ **|** Por favor, mencione um **Usuário** válido !")
-    if(!member.bannable)
-      return message.reply("❌ **|** Não posso banir esse **Usuário** .")
-    let reason = args.slice(1).join(' ')
-    if(!reason) reason = "❌"
-    await member.ban(reason)
-      .catch(error => message.reply(`❌ **|** Desculpe ${message.author} não consegui kickar o membro devido o: ${error}`))
+      if(!member)
+        return message.reply("❌ **|** Por favor, mencione um **Usuário** válido !")
+          
+          if(!member.bannable)
+            return message.reply("❌ **|** Não posso banir esse **Usuário** .")
+    
+            let reason = args.slice(1).join(' ')
+                if(!reason) reason = "❌"
+                  await member.ban(reason)
+                      .catch(error => message.reply(`❌ **|** Desculpe ${message.author} não consegui kickar o membro devido o: ${error}`))
 
       let pEmbed = new Discord.RichEmbed()
           .setTitle("💣 **Ban**")

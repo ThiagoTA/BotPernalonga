@@ -26,7 +26,7 @@ exports.run = async (client, message, args, prefix) => {
         let pEmbed = new Discord.RichEmbed()
           .setTitle("Limpeza")
           .addField("Chat limpo por: ", `${message.author.tag}`)
-          .setColor("GREEN")
+          .setColor("#bd26f7")
           .setImage("https://vignette.wikia.nocookie.net/shingekinokyojin/images/4/4a/GleamingGrippingAruanas-max-1mb.gif/revision/latest?cb=20170831100037&path-prefix=fr")
         
           message.channel.send(pEmbed)

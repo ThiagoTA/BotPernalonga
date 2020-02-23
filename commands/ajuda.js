@@ -11,7 +11,7 @@ exports.run = (client,message,args) => {
     embed = {
         "title": "📃 **Comandos** 📃",
         "description": `Olá ${message.author}, todos os comandos possiveis estão aqui.`,
-        "color": 4886754,
+        "color": 9442302,
         "thumbnail": {
           "url": "http://3.bp.blogspot.com/-Eohhdl-gUJ0/VPHQuiXynDI/AAAAAAAAMb0/2lcXs5AFFDs/s1600/Bugs%2BBunny%2B12%2Bcora%C3%A7%C3%A3o%2Bsaltando.gif"
         },

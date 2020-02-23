@@ -20,7 +20,7 @@ module.exports = {run: (client, message, args) => {
         }
         message.channel.send("@everyone")
         let anuncioembed = new Discord.RichEmbed()
-        .setColor("RANDOM")
+        .setColor("#bd26f7")
         .addField(`${titulo}`, `**${anuncio}**`)
         .setFooter(`Anuncio feito por ${message.author.tag}`)
         .setTimestamp();

@@ -11,7 +11,7 @@ exports.run = (client,message,args) => {
     embed = {
         "title": "📃 **Sobre** 📃",
         "description": `**Olá** ${message.author}, sou o pernalonga, sou um mascote na live do **Lorran_AA**, sou um Bot exclusivo desse **Servidor**. \n\nFui desenvolvido pelo !Thiago#9137, que atualmente, está cursando a faculdade de **TI**.\n\nAqui em baixo está algumas informações do meu **Criador** e **Dono**:`,
-        "color": 4886754,
+        "color": 9442302,
         "thumbnail": {
           "url": "https://media3.giphy.com/media/3oFzlZzyoQZdNekCas/giphy.gif"
         },

@@ -11,7 +11,7 @@ exports.run = (client,message,args) => {
     embed = {
         "title": "⏰ **Horário das Lives** ⏰",
         "description": `Olá ${message.author}, aqui estão os horários, são atualizados toda semana. \n Se você é Brasileiro, utilize -horário.`,
-        "color": 4886754,
+        "color": 9442302,
         "thumbnail": {
           "url": "https://media1.tenor.com/images/7b02799e8956ad375c39ba2710795003/tenor.gif?itemid=10654881"
         },

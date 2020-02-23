@@ -11,7 +11,7 @@ exports.run = (client,message,args) => {
         let embed = new Discord.RichEmbed()
 
         .setTitle("**Ping do Bot**")
-        .setColor("RANDOM")
+        .setColor("#bd26f7")
         .setDescription(`O ping do bot é de ${Math.round(client.ping)}ms!`)
         
 
