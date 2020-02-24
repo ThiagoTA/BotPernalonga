@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const config = require('./config.json');
-
+const jimp = require('jimp')
 const client = new Discord.Client()
 client.prefix = config.prefix;
 
@@ -27,6 +27,30 @@ command = command.slice(config.prefix.length);
 } catch (err) {
       console.error("Erro:" + err)
 }
+
+})
+
+client.on('guildMemberAdd', async member => {
+
+    let canal = client.channels.get('659599505817206814')
+    let fonte = await jimp.loadFont(jimp.FONT_SANS_32_WHITE)
+    let mask  = await jimp.read('mascara.png')
+    let fundo = await jimp.read('base.png')
+
+jimp.read(member.user.displayAvatarURL)
+  .then(avatar => {
+    
+    avatar.resize(130, 130)
+    mask.resize(130, 130)
+    avatar.mask(mask)
+    fundo.print(fonte, 222, 177, member.user.username)
+    fundo.composite(avatar, 40, 70).write('bemvindo.png')
+    canal.send(`<:MDS:632329143505256469>**Bem Vindo ao servidor Live Lorran 🎬** \n ${member.user}, lembra-se de ler às <#659601100835651604> e dar uma olhada no <#659601205428748332> para ficar por dentro de tudo.\nVenha interejar conosco no canal <#659602955053432895>.`, { files: ["bemvindo.png"]});
+
+  })
+  .catch(err => {
+    console.log('Erro ao carregar a imagem')
+  });
 
 })
 
