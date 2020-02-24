@@ -37,8 +37,7 @@ client.on('guildMemberAdd', async member => {
     let mask  = await jimp.read('mascara.png')
     let fundo = await jimp.read('base.png')
 
-jimp.read(member.user.displayAvatarURL)
-  .then(avatar => {
+    jimp.read(member.user.displayAvatarURL).then(avatar => {
     
     avatar.resize(130, 130)
     mask.resize(130, 130)
