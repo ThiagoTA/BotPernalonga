@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const config = require('./config.json');
-const jimp = require('jimp')
+const jimp = require('jimp');
 const client = new Discord.Client()
 client.prefix = config.prefix;
 
