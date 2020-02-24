@@ -45,6 +45,7 @@ client.on('guildMemberAdd', async member => {
     fundo.print(fonte, 222, 177, member.user.username)
     fundo.composite(avatar, 40, 70).write('bemvindo.png')
     canal.send(`<:MDS:632329143505256469>**Bem Vindo ao servidor Live Lorran 🎬** \n ${member.user}, lembra-se de ler às <#659601100835651604> e dar uma olhada no <#659601205428748332> para ficar por dentro de tudo.\nVenha interejar conosco no canal <#659602955053432895>.`, { files: ["bemvindo.png"]});
+    console.log('Imagem foi carregada com sucesso')
 
   })
   .catch(err => {
