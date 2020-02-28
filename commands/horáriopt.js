@@ -17,38 +17,38 @@ exports.run = (client,message,args) => {
         },
         "fields": [
           {
-            "name": "\n❌ **Domingo**",
-            "value": "**Recesso**",
+            "name": "\n✅ **Domingo**",
+            "value": "**16Hrs até 22Hrs**",
             "inline": true
           },
           {
             "name": "❌ **Segunda**",
-            "value": "**Recesso**",
+            "value": "**~~Sem Live~~**",
             "inline": true
           },
           {
-            "name": "❌ **Terça**",
-            "value": "**Recesso**",
+            "name": "✅ **Terça**",
+            "value": "**21Hrs até 01Hrs**",
             "inline": true
           },
           {
-            "name": "❌ **Quarta**",
-            "value": "**Recesso**",
+            "name": "✅ **Quarta**",
+            "value": "**21Hrs até 01Hrs**",
             "inline": true
           },
           {
-            "name": "❌ **Quinta**",
-            "value": "**Recesso**",
+            "name": "✅ **Quinta**",
+            "value": "**21Hrs até 01Hrs**",
             "inline": true
           },
           {
-            "name": "❌ **Sexta**",
-            "value": "**Recesso**",
+            "name": "✅ **Sexta**",
+            "value": "**21Hrs até 01Hrs**",
             "inline": true
           },
           {
-            "name": "❌ **Sábado**",
-            "value": "**Recesso**",
+            "name": "✅ **Sábado**",
+            "value": "**19Hrs até 01Hrs**",
             "inline": true
           },
           {
@@ -70,4 +70,3 @@ exports.run = (client,message,args) => {
 exports.help = {
     name: "horáriopt"
 }
-
