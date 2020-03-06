@@ -91,14 +91,15 @@ if(message.channel.id !== '659603136574521364'){
         break;
         case 32: gif = 'https://i.pinimg.com/originals/ce/78/9b/ce789b4147903a4d3fbec9f2c2103df1.gif'
         break;
-      
+
       }
+      let beiembed = new Discord.RichEmbed()
+      .setColor('RED')
+      .setDescription(`💞 **${member.user.username}** você levou um beijo do(a) **${message.author.username}**`)
+      .setImage(`${gif}`)
+    message.channel.send(beiembed)
     }
-    let beiembed = new Discord.RichEmbed()
-    .setColor('RED')
-    .setDescription(`💞 **${member.user.username}** você levou um beijo do(a) **${message.author.username}**`)
-    .setImage(`${gif}`)
-  message.channel.send(beiembed)
+
   }
           
 }
