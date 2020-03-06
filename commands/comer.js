@@ -4,142 +4,86 @@ exports.run = async (client, message, args) => {
   
 if(message.channel.id !== '659603136574521364'){
   
-    message.channel.send('❌ **|** Não foi possível mandar esse comando dentro desse canal')
-  
-  } else {
-  
-let member = message.mentions.members.first()
-    if(!member)
-      return message.channel.send("❌ **|** Por favor, mencione **alguém** para comer! ``-comer @<usuário>``")
- 
-    if(message.author.id === member.id){
-        let retornokiss = new Discord.RichEmbed()
-          .setColor("BLACK")
-          .setDescription("😱 Tem como se comer? **( ͡° ͜ʖ ͡°)**")
-          .setImage(`https://media.tenor.com/images/68048762da94c1158f05f3326f6c9297/tenor.gif`)
-        message.channel.send(retornokiss)
-      }else {
+  let erroembed = new Discord.RichEmbed()
+                
+    .setDescription(':warning:  Não foi possível enviar este comando nesse canal !')
+    .setColor('#ff0000')
 
+  message.channel.send(erroembed)
+
+} else {
+      
+    let member = message.mentions.members.first()
+    
+    let membroembed = new Discord.RichEmbed()
+                        
+      .setDescription(':warning:  Você não mencionou ningúem !')
+      .setColor('#ff0000')
+
+    if(!member) return message.channel.send(membroembed)
+        
+          if(message.author.id === member.id){
+        
+            let retornokiss = new Discord.RichEmbed()
+              .setColor("BLACK")
+              .setDescription("😱 Tem como se comer? **( ͡° ͜ʖ ͡°)**")
+              .setImage(`https://media.tenor.com/images/68048762da94c1158f05f3326f6c9297/tenor.gif`)
+            message.channel.send(retornokiss)
+      
+        }else {
+      
       number = 16;
       let random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
       switch (random) {
-        case 1: 
-        let comer1embed = new Discord.RichEmbed()
-          .setColor("#80ff00")
-          .setDescription(`😈 **${member.user.username}** você está sendo comida(o) pela(o) **${message.author.username}**`)
-          .setImage(`https://s-media-cache-ak0.pinimg.com/originals/fa/bb/c2/fabbc2667d756977aa8731a9acfea889.gif`);
-        message.channel.send(comer1embed)
+        case 1: gif = 'https://s-media-cache-ak0.pinimg.com/originals/fa/bb/c2/fabbc2667d756977aa8731a9acfea889.gif'
         break;
-        case 2:
-        let comer2embed = new Discord.RichEmbed()
-          .setColor("#80ff00")
-          .setDescription(`😈 **${member.user.username}** você está sendo comida(o) pela(o) **${message.author.username}**`)
-          .setImage(`https://i2.wp.com/66.media.tumblr.com/bd9ac6bf8b18fef7cf53499f7d46ccf0/tumblr_nvo38bV2CS1qd16pfo1_500.gif`);
-         message.channel.send(comer2embed)
+        case 2: gif = 'https://i2.wp.com/66.media.tumblr.com/bd9ac6bf8b18fef7cf53499f7d46ccf0/tumblr_nvo38bV2CS1qd16pfo1_500.gif'
         break;
-        case 3:
-        let comer3embed = new Discord.RichEmbed()
-          .setColor("#80ff00")
-          .setDescription(`😈 **${member.user.username}** você está sendo comida(o) pela(o) **${message.author.username}**`)
-          .setImage(`https://c1.quickcachr.fotos.sapo.pt/i/o4f0101d1/20159881_SCKjT.gif`);
-        message.channel.send(comer3embed)
+        case 3: gif = 'https://c1.quickcachr.fotos.sapo.pt/i/o4f0101d1/20159881_SCKjT.gif'
         break;
-        case 4:
-        let comer4embed = new Discord.RichEmbed()
-          .setColor("80ff00")
-          .setDescription(`😈 **${member.user.username}** você está sendo comida(o) pela(o) **${message.author.username}**`)
-          .setImage(`https://media.giphy.com/media/zd76Z18lDrjy0/giphy.gif`);
-        message.channel.send(comer4embed)
+        case 4: gif = 'https://media.giphy.com/media/zd76Z18lDrjy0/giphy.gif'
         break;
-        case 5:
-        let comer5embed = new Discord.RichEmbed()
-          .setColor("80ff00")
-          .setDescription(`😈 **${member.user.username}** você está sendo comida(o) pela(o) **${message.author.username}**`)
-          .setImage(`https://media.giphy.com/media/LU3uRsnett7gs/giphy.gif`);
-        message.channel.send(comer5embed)
+        case 5: gif = 'https://media.giphy.com/media/LU3uRsnett7gs/giphy.gif'
         break;
-        case 6:
-        let comer6embed = new Discord.RichEmbed()
-          .setColor("80ff00")
-          .setDescription(`😈 **${member.user.username}** você está sendo comida(o) pela(o) **${message.author.username}**`)
-          .setImage(`https://uploads.spiritfanfiction.com/fanfics/capitulos/201408/fanfiction-diabolik-lovers-the-seven-swords-2297241,030820141922.gif`);
-        message.channel.send(comer6embed)
+        case 6: gif = 'https://uploads.spiritfanfiction.com/fanfics/capitulos/201408/fanfiction-diabolik-lovers-the-seven-swords-2297241,030820141922.gif'
         break;
-        case 7:
-        let comer7embed = new Discord.RichEmbed()
-          .setColor("80ff00")
-          .setDescription(`😈 **${member.user.username}** você está sendo comida(o) pela(o) **${message.author.username}**`)
-          .setImage(`https://media1.tenor.com/images/f56880b2fb5af27719af8c575dc96a61/tenor.gif`);
-        message.channel.send(comer7embed)
+        case 7: gif = 'https://media1.tenor.com/images/f56880b2fb5af27719af8c575dc96a61/tenor.gif'
         break;
-        case 8:
-        let comer8embed = new Discord.RichEmbed()
-          .setColor("80ff00")
-          .setDescription(`😈 **${member.user.username}** você está sendo comida(o) pela(o) **${message.author.username}**`)
-          .setImage(`https://data.whicdn.com/images/297349107/original.gif`);
-        message.channel.send(comer8embed)
+        case 8: gif = 'https://data.whicdn.com/images/297349107/original.gif'
         break;
-        case 9:
-        let comer9embed = new Discord.RichEmbed()
-          .setColor("80ff00")
-          .setDescription(`😈 **${member.user.username}** você está sendo comida(o) pela(o) **${message.author.username}**`)
-          .setImage(`https://media1.tenor.com/images/3d599469dc38e928d4bcfd12ff748b14/tenor.gif`);
-        message.channel.send(comer9embed)
+        case 9: gif = 'https://media1.tenor.com/images/3d599469dc38e928d4bcfd12ff748b14/tenor.gif'
         break;
-        case 10:
-        let comer10embed = new Discord.RichEmbed()
-          .setColor("80ff00")
-          .setDescription(`😈 **${member.user.username}** você está sendo comida(o) pela(o) **${message.author.username}**`)
-          .setImage(`https://media.giphy.com/media/U6kGxfqszGeUBFnOT8/giphy.gif`);
-        message.channel.send(comer10embed)
+        case 10: gif = 'https://media.giphy.com/media/U6kGxfqszGeUBFnOT8/giphy.gif'
         break;
-        case 11:
-        let comer11embed = new Discord.RichEmbed()
-          .setColor("80ff00")
-          .setDescription(`😈 **${member.user.username}** você está sendo comida(o) pela(o) **${message.author.username}**`)
-          .setImage(`https://i.pinimg.com/originals/6d/a4/34/6da434a8e9ad051e05b197ac59fa4b9d.gif`);
-        message.channel.send(comer11embed)
+        case 11: gif = 'https://i.pinimg.com/originals/6d/a4/34/6da434a8e9ad051e05b197ac59fa4b9d.gif`'
         break;
-        case 12:
-        let comer12embed = new Discord.RichEmbed()
-          .setColor("80ff00")
-          .setDescription(`😈 **${member.user.username}** você está sendo comida(o) pela(o) **${message.author.username}**`)
-          .setImage(`http://gif-free.com/uploads/posts/2018-01/1517419327_anime-girl-eating-burger.gif`);
-        message.channel.send(comer12embed)
+        case 12: gif = 'http://gif-free.com/uploads/posts/2018-01/1517419327_anime-girl-eating-burger.gif'
         break;
-        case 13:
-        let comer13embed = new Discord.RichEmbed()
-          .setColor("80ff00")
-          .setDescription(`😈 **${member.user.username}** você está sendo comida(o) pela(o) **${message.author.username}**`)
-          .setImage(`https://media.giphy.com/media/9vmCDhkEs4LWo/giphy.gif`);
-        message.channel.send(comer13embed)
+        case 13: gif = 'https://media.giphy.com/media/9vmCDhkEs4LWo/giphy.gif'
         break;
-        case 14:
-        let comer14embed = new Discord.RichEmbed()
-            .setColor("80ff00")
-            .setDescription(`😈 **${member.user.username}** você está sendo comida(o) pela(o) **${message.author.username}**`)
-            .setImage(`https://media0.giphy.com/media/x7Giq3osLWg6I/source.gif`);
-        message.channel.send(comer14embed)
+        case 14: gif = 'https://media0.giphy.com/media/x7Giq3osLWg6I/source.gif' 
         break;
-        case 15:
-        let comer15embed = new Discord.RichEmbed()
-            .setColor("80ff00")
-            .setDescription(`😈 **${member.user.username}** você está sendo comida(o) pela(o) **${message.author.username}**`)
-            .setImage(`https://i.gifer.com/Q3p.gif`);
-        message.channel.send(comer15embed)
+        case 15: gif = 'https://i.gifer.com/Q3p.gif'
         break;
-        case 16:
-        let comer16embed = new Discord.RichEmbed()
-            .setColor("80ff00")
-            .setDescription(`😈 **${member.user.username}** você está sendo comida(o) pela(o) **${message.author.username}**`)
-            .setImage(`https://pa1.narvii.com/6498/847503bf2eb86cfb8b2360828a21e8b6efac364a_hq.gif`);
-        message.channel.send(comer16embed)
+        case 16: gif = 'https://pa1.narvii.com/6498/847503bf2eb86cfb8b2360828a21e8b6efac364a_hq.gif'
         break;
       }
-    } 
-  }    
+      
+      let comerembed = new Discord.RichEmbed()
+        .setColor("#80ff00")
+        .setDescription(`😈 **${member.user.username}** você está sendo comida(o) pela(o) **${message.author.username}**`)
+        .setImage(`${gif}`)
+      message.channel.send(comerembed)
+    }
+
+  }
+          
 }
 
 exports.help = {
     name:"comer"
 }
+
+
+
+
