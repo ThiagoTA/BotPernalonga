@@ -51,7 +51,7 @@ if(message.channel.id !== '659603136574521364'){
             .setColor("BLACK")
             .setDescription(`💥 **${member.user.username}** você recusou o beijo do(a) **${message.author.username}**`)
             .setImage(`https://data.whicdn.com/images/216159838/original.gif`);
-          message.guild.channels.get(`659603136574521364`).send(kiss6embed)
+            message.channel.send(kiss6embed)
         break;
         case 7: gif = 'https://media1.tenor.com/images/a1f7d43752168b3c1dbdfb925bda8a33/tenor.gif'
         break;
@@ -88,7 +88,7 @@ if(message.channel.id !== '659603136574521364'){
             .setColor("#800000")
             .setDescription(`😱 Que isso?? **${member.user.username}** e **${message.author.username}**`)
             .setImage(`https://i.pinimg.com/originals/9d/26/86/9d26867a4ce1a8ba746bf80fbf21d6a3.gif`);
-          message.guild.channels.get(`659603136574521364`).send(kiss22embed)
+            message.channel.send(kiss22embed)
         break;
         case 23: gif = 'https://data.whicdn.com/images/246343962/original.gif'
         break;
