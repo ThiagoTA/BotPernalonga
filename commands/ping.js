@@ -1,13 +1,9 @@
 const Discord = require("discord.js");
 
 exports.run = (client,message,args) => {
-        
-    if(message.content.startsWith("-ping")){
-        msgDel = 1;
-        let numberMessages = parseInt(msgDel);
-        message.channel.fetchMessages({limit: numberMessages}).then(messages => message.channel.bulkDelete(messages));
-      }  
-    
+
+        message.delete().catch()
+  
         let embed = new Discord.RichEmbed()
 
         .setTitle("**Ping do Bot**")
@@ -15,7 +11,7 @@ exports.run = (client,message,args) => {
         .setDescription(`O ping do bot é de ${Math.round(client.ping)}ms!`)
         
 
-        message.channel.send(embed);
+        message.channel.send(embed).then(r => r.delete(20000))
 }
 
 exports.help = {

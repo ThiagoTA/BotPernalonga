@@ -4,23 +4,28 @@ exports.run = async (client, message, args) => {
   
 if(message.channel.id !== '659603136574521364'){
   
-  let erroembed = new Discord.RichEmbed()
+  message.delete().catch()
+
+  let comererro = new Discord.RichEmbed()
                 
-    .setDescription(':warning:  Não foi possível enviar este comando nesse canal !')
+    .setDescription(`:warning: ${message.author} não foi possível mandar esse tipo de comando aqui !`)
     .setColor('#ff0000')
 
-  message.channel.send(erroembed)
+  message.channel.send(comererro).then(r => r.delete(12000))
 
 } else {
       
-    let member = message.mentions.members.first()
+  let member = message.mentions.members.first()
     
-    let membroembed = new Discord.RichEmbed()
-                        
-      .setDescription(':warning:  Você não mencionou ningúem !')
-      .setColor('#ff0000')
+  let membroembed = new Discord.RichEmbed()
+                      
+    .setDescription(`:warning: ${message.author} mencione alguém para comer !`)
+    .setColor('#ff0000')
 
-    if(!member) return message.channel.send(membroembed)
+  if(!member) {
+    message.channel.send(membroembed).then(r => r.delete(10000)) 
+    message.delete().catch()
+  }
         
           if(message.author.id === member.id){
         

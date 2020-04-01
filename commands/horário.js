@@ -63,7 +63,7 @@ exports.run = (client,message,args) => {
           }
         ]
       };
-      message.channel.send({ embed });
+      message.channel.send({ embed }).then(r => r.delete(40000));
       
 }
 

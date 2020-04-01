@@ -1,30 +1,38 @@
 const Discord = require("discord.js")
 
 module.exports.run = (client, message, args) => {
-
-    if(message.content.startsWith("-reportar")){
-        msgDel = 1;
-        let numberMessages = parseInt(msgDel);
-        message.channel.fetchMessages({limit: numberMessages}).then(messages => message.channel.bulkDelete(messages));
-    }
     
+    message.delete().catch() 
     
     let splitarg = args.join(" ").split(" - ")
     let member = splitarg[0]
     let motivo = splitarg[1]
 
+        let mencionar = new Discord.RichEmbed()
+                
+            .setDescription(`:warning: ${message.author} mencione alguém para reportar! **-reportar @<usuário> - (motivo)** !`)
+            .setColor('#ff0000')   
+    
         if(!member){
-            return message.channel.send("❌ **|** Por favor, mencione **alguém** para reportar! ``-reportar @<usuário> - (motivo)``")
-           
-            
+            return message.channel.send(mencionar).then(r => r.delete(10000))   
         }
         
+        let motivo1 = new Discord.RichEmbed()
+                
+            .setDescription(`:warning: ${message.author} cite o motivo para reporta-lo! **-reportar @<usuário> - (motivo)** !`)
+            .setColor('#ff0000')   
+
         if(!motivo){
-            return message.channel.send("❌ **|** Por favor, cite o **motivo** para reporta-lo! ``-reportar @<usuário> - (motivo)``")
-            
+            return message.channel.send(motivo1).then(r => r.delete(10000)) 
         }
-    
-    message.channel.send(`✅ **|** Seu reporte foi enviado com **sucesso**, staff irá analisar seu caso.`)   
+        
+    let sucess = new Discord.RichEmbed()
+                
+        .setDescription(`:white_check_mark: ${message.author} seu reporte foi enviado com **sucesso**, staff irá analisar seu caso !`)
+        .setColor('#00ff00')    
+
+    message.channel.send(sucess).then(r => r.delete(10000)) 
+ 
     let reportarembed = new Discord.RichEmbed()
         .setColor("BLACK")
         .setTitle(`REPORT`)
