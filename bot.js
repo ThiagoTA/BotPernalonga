@@ -57,7 +57,7 @@ client.on('guildMemberAdd', async member => {
 client.on("ready", () => {
     console.log(`Bot foi iniciado com, ${client.users.size} usuários, ${client.guilds.size} servidores, ${client.channels.size} canais.`)
 
-    let messages = [`${client.users.size} pessoas`,
+    let messages = [
                     `-ajuda`,
                     `-sobre`,
                     `${client.users.size} pessoas`

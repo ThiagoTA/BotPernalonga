@@ -50,12 +50,7 @@ if(message.channel.id !== '659603136574521364'){
         break;
         case 5: gif = 'https://pa1.narvii.com/6471/68702f51590c932bf0dbebaef9804c31c664ebd9_hq.gif'
         break;
-        case 6: 
-          let abrembed = new Discord.RichEmbed()
-            .setColor("F7DC6F")
-            .setDescription(`💥 **${member.user.username}** você recusou o abraço do(a) **${message.author.username}**`)
-            .setImage(`https://media1.tenor.com/images/5b5974e20c4ab53e7bbbea0ea9cc996b/tenor.gif`)
-          message.channel.send(abrembed)
+        case 6: gif = 'https://i0.wp.com/i0.kym-cdn.com/photos/images/newsfeed/000/980/556/73b.gif'
         break;
         case 7: gif = 'https://media2.giphy.com/media/XBhIHmeO7EDF6/source.gif'
         break;
@@ -87,12 +82,7 @@ if(message.channel.id !== '659603136574521364'){
         break;
         case 21: gif = 'https://media.giphy.com/media/DyYraMDuPvuOQ/giphy.gif'
         break;
-        case 22:
-          let abraço22embed = new Discord.RichEmbed()
-            .setColor("BLACK")
-            .setDescription(`😱 Esse é o seu abraço **${message.author.username}** no(a) **${member.user.username}**??`)
-            .setImage(`https://i.pinimg.com/originals/f9/a0/57/f9a057a045da55a250e661480ef92846.gif`);
-          message.channel.send(abraço22embed)
+        case 22: gif = 'https://i.pinimg.com/originals/f9/a0/57/f9a057a045da55a250e661480ef92846.gif'
         break;
         case 23: gif = 'https://i.pinimg.com/originals/88/5a/e2/885ae241c071f7c87e38fcb3d2d9b6e5.gif'
         break;

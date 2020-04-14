@@ -51,12 +51,7 @@ if(message.channel.id !== '659603136574521364'){
         break;
         case 5: gif = 'https://media2.giphy.com/media/Ka2NAhphLdqXC/giphy.gif?cid=790b76118e1a46d309103c66ffe1aef078c1dc9ce319b676&rid=giphy.gif'
         break;
-        case 6:
-          let kiss6embed = new Discord.RichEmbed()
-            .setColor("BLACK")
-            .setDescription(`💥 **${member.user.username}** você recusou o beijo do(a) **${message.author.username}**`)
-            .setImage(`https://data.whicdn.com/images/216159838/original.gif`);
-            message.channel.send(kiss6embed)
+        case 6: gif = 'https://i.pinimg.com/originals/7d/49/fa/7d49fa49476dda9b040541a83342ceac.gif'
         break;
         case 7: gif = 'https://media1.tenor.com/images/a1f7d43752168b3c1dbdfb925bda8a33/tenor.gif'
         break;
@@ -88,12 +83,7 @@ if(message.channel.id !== '659603136574521364'){
         break;
         case 21: gif = 'https://media3.giphy.com/media/12VXIxKaIEarL2/source.gif'
         break;
-        case 22:
-          let kiss22embed = new Discord.RichEmbed()
-            .setColor("#800000")
-            .setDescription(`😱 Que isso?? **${member.user.username}** e **${message.author.username}**`)
-            .setImage(`https://i.pinimg.com/originals/9d/26/86/9d26867a4ce1a8ba746bf80fbf21d6a3.gif`);
-            message.channel.send(kiss22embed)
+        case 22: gif = 'https://i.pinimg.com/originals/9d/26/86/9d26867a4ce1a8ba746bf80fbf21d6a3.gif'
         break;
         case 23: gif = 'https://data.whicdn.com/images/246343962/original.gif'
         break;
